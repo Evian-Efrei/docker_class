@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction aux Conteneurs Docker</title>
+    <style>
+        /* CSS se trouve dans la section suivante */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #0db7ed; /* Couleur bleue de Docker */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #0db7ed;
+        }
+
+        .card h2 {
+            color: #0db7ed;
+            border-bottom: 2px solid #e0f7ff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .key-term {
+            font-weight: bold;
+            color: #067e9f; /* Un bleu plus foncé */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "➡️";
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐳 Introduction aux Conteneurs Docker</h1>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>Qu'est-ce qu'un Conteneur ?</h2>
+            <p>Imaginez un conteneur d'expédition : il peut contenir n'importe quel type de marchandise, et il est livré de la même manière, peu importe où il va. Un <span class="key-term">conteneur Docker</span> fonctionne de la même manière pour les applications.</p>
+            <p>C'est un paquet léger, autonome et exécutable qui contient tout ce dont une application a besoin pour s'exécuter : code, bibliothèques, outils système, paramètres d'exécution et environnement.</p>
+        </div>
+
+        <div class="card">
+            <h2>Pourquoi utiliser Docker ?</h2>
+            <ul>
+                <li><span class="key-term">Isolation :</span> Chaque conteneur est indépendant.</li>
+                <li><span class="key-term">Portabilité :</span> "Ça marche sur ma machine" devient "Ça marche partout !".</li>
+                <li><span class="key-term">Rapidité :</span> Les conteneurs démarrent presque instantanément.</li>
+                <li><span class="key-term">Cohérence :</span> L'environnement d'exécution est toujours le même.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Concepts Clés</h2>
+            <p>Pour comprendre Docker, il faut connaître deux éléments principaux :</p>
+            <ul>
+                <li><span class="key-term">Image :</span> C'est le modèle de construction d'un conteneur. Elle est statique et ne change pas. C'est l'équivalent d'un plan ou d'une recette.</li>
+                <li><span class="key-term">Conteneur :</span> C'est l'instance vivante et exécutable de l'Image. C'est le programme en cours d'exécution basé sur le plan.</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
